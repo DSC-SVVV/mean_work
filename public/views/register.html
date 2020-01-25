@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jumbotron text-centre">
+      <form method="post" ng-submit="send_data()">
+        First Name:<br /><input type="text" name="firstname"  ng-model="form_data.first_name" /><br />
+        Last Name:<br /><input type="text" name="lastname"ng-model="form_data.last_name" /><br />
+        Phone Number:<br /><input type="text" name="phone"ng-model="form_data.phone" /><br /><br />
+        
+        <div class="btnalnctr">
+          <button type="submit">Submit</button>
+        </div>  
+      </form>
+    
+  </body>
+</html>

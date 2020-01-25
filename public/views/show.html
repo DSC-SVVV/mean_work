@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div>
+        <button type="submit" ng-click="show_data();">Show details</button>
+        <br /><br />
+      </div>
+
+      <table align="center" border="">
+        <tr>
+          <th><b>First Name</b></th>
+          <th><b>Last Name</b></th>
+          <th><b>Phone</b></th>
+        </tr>
+
+        <tr ng-repeat="data in receive_data">
+          <td>{{data.first_name}}</td>
+          <td>{{data.last_name}}</td>
+          <td>{{data.phone}}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

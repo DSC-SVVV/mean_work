@@ -4,5 +4,8 @@ angular.module("angularSPA", [
   "HomeCtrl",
   "AboutCtrl",
   "ContactCtrl",
+  "RegisterCtrl",
+  "ShowCtrl",
+  "UpdateCtrl",
   "AboutService"
 ]);

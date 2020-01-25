@@ -7,7 +7,7 @@ angular.module("AboutService", []).factory("About", [
         return $http.get("/api/abouts");
       },
 
-      //call to delte the data
+      //call to delete the data
       delete: function() {
         return $http.delete("/api/abouts" + id);
       }

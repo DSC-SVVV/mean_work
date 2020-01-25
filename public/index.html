@@ -5,16 +5,21 @@
     <title>Single Page Application: MEAN Stack</title>
     <!-- linking css -->
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="css/btnalnctr.css">  custom Styles -->
     <base href="/">
     <!-- JS -->
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
     
     <!-- Angular custom -->
+    <!-- controllers -->
     <script src="js/controllers/HomeCtrl.js"></script>
     <script src="js/controllers/AboutCtrl.js"></script>
     <script src="js/controllers/ContactCtrl.js"></script>
+    <script src="js/controllers/RegisterCtrl.js"></script>
+    <script src="js/controllers/ShowCtrl.js"></script>
+    <script src="js/controllers/UpdateCtrl.js"></script>
+
     <script src="js/services/AboutService.js"></script>
     <script src="js/angappRoutes.js"></script>
     <script src="js/angapp.js"></script>
@@ -31,11 +36,15 @@
             <!-- Link to pages, Anglular handle routing here -->
             <ul class="nav navbar-nav">
                 <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/show">Show Details</a></li>
+                <li><a href="/update">Update Details</a></li>
             </ul>
         </nav>
 
+        
         <!-- Angular dynamic content -->
         <div ng-view></div>
     </div>

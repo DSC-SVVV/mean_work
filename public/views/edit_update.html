@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Update Page</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="btnalnctr">
+        <button type="submit" ng-click="retrieve_data();">
+          Show data to update details
+        </button>
+        <br /><br />
+      </div>
+
+      <table align="center" border="" ng-init="retrieve_data_ind()">
+        <tr>
+          <th>
+            <h4><b>First Name</b></h4>
+          </th>
+          <th>
+            <h4><b>Last Name</b></h4>
+          </th>
+          <th>
+            <h4><b>Phone Number</b></h4>
+          </th>
+          <th>
+            <h4><b>Operation</b></h4>
+          </th>
+        </tr>
+        <tr ng-repeat="data in receive_data_ind">
+          <td><input ng-model="data.first_name" /></td>
+          <td><input ng-model="data.last_name" /></td>
+          <td><input ng-model="data.phone" /></td>
+          <td align="center">
+            <button ng-click="update_data(data._id)">Update</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
